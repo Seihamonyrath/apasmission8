@@ -1,0 +1,8 @@
+name: apas_mission8 # The name of the app
+services:
+- environment_slug: php
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: Seihamonyrath/apasmission8 # Your GitHub repository to deploy
+  name: apas_mission8 # The name of the app

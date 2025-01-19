@@ -1,0 +1,12 @@
+spec:
+  name: apas_mission8 # The name of the app
+  services:
+  - environment_slug: php
+    git:
+      branch: main
+      repo_clone_url: https://github.com/Seihamonyrath/apasmission8.git # Your GitHub repository to deploy (SSH) or (HTTPS)
+    envs:
+    - key: APP_KEY
+      value: "base64:qYx6tHlphETF++KJOFs3A+yoQ1LwQ7p0DrTkzhqTNJ0=" # Your Laravel app key (php artisan key:generate --show)
+    name: apas_mission8 # The name of the app 
+    run_command: heroku-php-apache2 public/
